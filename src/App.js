@@ -52,7 +52,7 @@ function App() {
           }
         });
       }
-    }
+   }
 
    const onRandom = () => {
       const randomId = Math.floor(Math.random() * 826) + 1;
@@ -63,13 +63,13 @@ function App() {
           window.alert('¡No hay personajes con este ID!');
         }
       });
-    };  
+   };  
 
    const onClose = (id) => {
       const filteredCharacters = characters.filter((character) => character.id !== id);
       setCharacters(filteredCharacters);
-    };
-     
+   }; 
+
    return (
       <div className='App'>
          {location.pathname !== '/' && <Nav onSearch={onSearch} onRandom={onRandom} logOut={logOut} />}

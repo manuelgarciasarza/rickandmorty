@@ -17,17 +17,19 @@ export default function SearchBar(props) {
 
    return (
       <div className={style.conteiner}>
-         <input 
-            className={style.bar} 
-            type='search' 
-            placeholder="Buscar..."
-            value={id}
-            onChange={handleChange}
-         />
-         <button className={style.add} onClick={() => props.onSearch(id)}>Agregar</button>
-         <button className={style.random} onClick={handleRandom}>
-         Random
-         </button>
+         <div>
+            <input 
+               className={style.bar} 
+               type='search' 
+               placeholder="Buscar..."
+               value={id}
+               onChange={handleChange}
+            />
+         </div>
+         <div className={style.buttons}>
+            <button className={style.add} onClick={() => props.onSearch(id)}>Agregar</button>
+            <button className={style.random} onClick={handleRandom}>Random</button>
+         </div>
       </div>
    );
 }

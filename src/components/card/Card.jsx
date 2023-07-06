@@ -14,13 +14,15 @@ export default function Card(props) {
          X
        </button>
        <div className={style.cardInfo}>
-         <Link to={`/detail/${props.id}`} ><h2>{props.name}</h2></Link>
-         <h2>{props.status}</h2>
+         <h2 className={`${style.nombre} ${style.cardInfo}`}>{props.name}</h2>
+{/*      <h2>{props.status}</h2>
          <h2>{props.species}</h2>
          <h2>{props.gender}</h2>
-         <h2>{props.origin}</h2>
+         <h2>{props.origin}</h2> */}
        </div>
-       <img className={style.image} src={props.image} alt="imagen" />
+       <Link to={`/detail/${props.id}`} >
+         <img className={style.image} src={props.image} alt="imagen" />
+       </Link>
      </div>
    );
  }

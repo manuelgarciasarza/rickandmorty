@@ -1,19 +1,36 @@
-.conteiner {
+.conteiner{
     display: flex;
-    gap: 50px;
-    height: 100%;
-    width: 100%;
-    background-color: blue;
     justify-content: center;
+    width: 100%;
+}
+
+.card {
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    font-size: 15px;
+    width: 400px;   
+    margin: 0px 30px;
+    margin-top: 10px;
     align-items: center;
-    font-size: 30px;
+    border-radius: 10px;
+    background: url('../../img/cardBk.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .image{
-    width: 500px;
-    margin: 30px;
+    width: 220px;
+    height: 220px;
+    border-color: green;
+    border-radius: 100px;
+    border-style: double ;
 }
 
-.infoH2{
+#info{
+    width: 280px;
     text-align: center;
 }
