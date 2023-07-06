@@ -5,7 +5,7 @@
     flex-direction: column;
     margin: 10px;
     border-radius: 10px;
-    background-color: violet;
+    background-color: url('../../../img/cardBk.png');
 }
 
 .cardInfo{
