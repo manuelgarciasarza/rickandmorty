@@ -1,0 +1,19 @@
+.conteiner {
+    display: flex;
+    gap: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.image{
+    width: 500px;
+    margin: 30px;
+}
+
+.infoH2{
+    text-align: center;
+}

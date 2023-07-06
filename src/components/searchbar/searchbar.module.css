@@ -1,0 +1,33 @@
+.conteiner {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.add, .random {
+    color: antiquewhite;
+    border-color: violet;
+    background-color: blueviolet;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    margin: 10px;
+}
+
+.add:active, .random:active{
+    opacity: 0.8;
+    transition: all 0.1s ease-in;
+}
+
+.add:hover{
+    opacity: 0.8;
+    transition: all 0.1s ease-in;
+}
+
+.bar {
+    margin-right: 15px;
+    border-color: blueviolet;
+    border-radius: 4px;
+    height: 35px;
+    font-size: 20px;
+}

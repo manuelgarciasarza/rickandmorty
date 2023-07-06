@@ -1,0 +1,6 @@
+.conteiner {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
