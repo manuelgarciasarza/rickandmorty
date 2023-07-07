@@ -31,7 +31,7 @@ const Card = (props) => {
       <button className={style.favorite} onClick={handleFavorite}>
         {isFav ? "❤️" : "🤍"}
       </button>
-       <button className={style.button} onClick={handleClick}>
+       <button title="Delete" className={style.button} onClick={handleClick}>
        </button>
        <div className={style.cardInfo}>
          <h2 className={`${style.nombre} ${style.cardInfo}`}>{props.name}</h2>

@@ -2,11 +2,9 @@ import React from "react";
 import SearchBar from "../searchbar/SearchBar";
 import style from "./nav.module.css"
 import Logo from "../../img/ricklogo.png"
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Nav(props){
-    const location = useLocation();
-
     return (
         <div className={style.nav}>
             <div className={style.navMenu}>
