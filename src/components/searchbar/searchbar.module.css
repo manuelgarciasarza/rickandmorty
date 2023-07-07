@@ -1,15 +1,15 @@
 .conteiner {
-    margin: 10px
+    margin: 0px
 }
 
 .buttons{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .add, .random {
-    color: #2ECC71;
-    border-color: #2ECC71;
+    color: #59CE5D;
+    border-color: #59CE5D;
     background-color: #000000;
     border-radius: 4px;
     transition: all 0.2s ease-in;
@@ -22,21 +22,30 @@
 }
 
 .add:hover, .random:hover{
+    cursor: pointer;
     opacity: 0.8;
     transition: all 0.1s ease-in;
 }
 
 .bar {
-    border-color: #2ECC71;
+    border-color: #59CE5D;
     border-radius: 4px;
     background-color: #000000;
     height: 30px;   
     font-size: 20px;
-    width: 540px;
-    color: #2ECC71;
-    margin-top: 20px;    
+    width: 580px;
+    color: #59CE5D;
+    margin-top: 0px;    
 }
 
 .bar::placeholder{
-    color: #2ECC71;
+    color: #59CE5D;
+}
+
+.bar::selection{
+    background-color: #59CE5D;
+}
+
+.bar::-webkit-clear-button{
+    color: #59CE5D;
 }

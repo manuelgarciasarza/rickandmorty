@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+import Favorites from "./components/favorites/favorite"
 import Cards from './components/cards/Cards';
 import About from "./components/about/about.jsx";
 import Nav from './components/nav/nav.jsx';
@@ -84,6 +85,7 @@ function App() {
                      />}/>
                   <Route path="/about" element={<About />} />
                   <Route path="/detail/:id" element={<Detail />} />
+                  <Route path="/favorites" element={<Favorites />} />
                </>
             )}
          </Routes>

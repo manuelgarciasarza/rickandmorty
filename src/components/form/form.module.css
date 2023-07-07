@@ -7,31 +7,58 @@
 }
 
 .form {
-    background-color: grey;
-    height: 400px;
-    width: 300px;
+    background: url("../../img/formbk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-top: 200px;
+    height: 700px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.input, .text, .error{
-    margin: 10px;
-    display: block;
+.formInfo{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 300px;
+    color: #59CE5D;
 }
 
 .input{
-    width: 80%;
+    width: 165px;
     height: 20px;
+    margin-left: 20px ;    
+    margin-bottom: 30px;
+    color: darkgreen;
+    border: solid 3px;
+    border-color: darkgreen;
+    border-radius: 4px;
 }
 
 .button {
-    margin-left:1px;
+    color: darkgreen;
+    border: solid 3px;
+    border-color: darkgreen;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+}
+
+.button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.1s ease-in;
 }
 
 .error {
-    color: red;
-    margin-left: 25px;
-    align-self: flex-start;
+    font-size: 12px;
+    color: #59CE5D;
 }

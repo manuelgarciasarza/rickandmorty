@@ -6,23 +6,23 @@
 
 .logo{
     width: 500px;
-    height: 150px;
+    height: 200px;
 }
 
 .navMenu{
     display: flex;
     margin: auto;
     font-size: 18px;
-    margin-top: 10px;
     gap: 60px;
     justify-content: right;
     width: 94%;
+    margin-top: 30px;
 }
 
 
 .logout{
-    color: #2ECC71;
-    border-color: #2ECC71;
+    color: #59CE5D;
+    border-color: #59CE5D;
     background-color: #000000;
     border-radius: 4px;
     transition: all 0.2s ease-in;
@@ -31,6 +31,7 @@
 .logout:active, .logout:hover{
     opacity: 0.8;
     transition: all 0.1s ease-in;
+    cursor: pointer;
 }
 
 .links {

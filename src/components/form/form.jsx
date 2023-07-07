@@ -41,30 +41,32 @@ export default function Form(props){
     return (
         <div className={style.conteiner}>
             <form className={style.form} onSubmit={handleSubmit}>
-                <label className={style.text}>Email</label>
+                <div className={style.formInfo}>
+                    {errors.email ? (<span className={style.error}>{errors.email}</span>): null} 
+                    <input 
+                        className={style.input}
+                        type="text" 
+                        name="email"
+                        value={user.email}
+                        onChange={handleChange}
+                        placeholder="Email..."
+                    />
+
+                    {errors.password ? (<span className={style.error}>{errors.password}</span>) :null}
+                    <input 
+                        className={style.input}
+                        type="password" 
+                        name="password"
+                        value={user.password}
+                        onChange={handleChange}
+                        placeholder="Password..."
+                    />
+
                 <input 
-                    className={style.input}
-                    type="text" 
-                    name="email"
-                    value={user.email}
-                    onChange={handleChange}
-                    placeholder="email..."
-                />
-                {errors.email ? (<span className={style.error}>{errors.email}</span>): null} 
-                <label className={style.text}>Password</label>
-                <input 
-                    className={style.input}
-                    type="password" 
-                    name="password"
-                    value={user.password}
-                    onChange={handleChange}
-                    placeholder="password..."
-                />
-               <input 
-                    type="submit" 
-                    className={style.button}
-                />
-                {errors.password ? (<span className={style.error}>{errors.password}</span>) :null}
+                        type="submit" 
+                        className={style.button}
+                    />
+                </div>
             </form>
         </div>
     )
