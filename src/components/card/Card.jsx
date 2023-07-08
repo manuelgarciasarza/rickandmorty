@@ -28,11 +28,13 @@ const Card = (props) => {
 
   return (
      <div className={style.card}>
-      <button className={style.favorite} onClick={handleFavorite}>
-        {isFav ? "❤️" : "🤍"}
-      </button>
+        <div className={style.buttons}>
+       <button title="Favorite" className={style.favorite} onClick={handleFavorite}>
+         {isFav ? "💚" : "🤍"}
+       </button>
        <button title="Delete" className={style.button} onClick={handleClick}>
        </button>
+       </div>
        <div className={style.cardInfo}>
          <h2 className={`${style.nombre} ${style.cardInfo}`}>{props.name}</h2>
 {/*      <h2>{props.status}</h2>

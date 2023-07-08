@@ -4,7 +4,7 @@ import { filterCards, orderCards, reset } from "../../redux/actions";
 import { connect, useDispatch} from "react-redux";
 import style from "./favorite.module.css"
 import { useState } from "react";
-
+ 
 const Favorites = (props) => {
   const { myFavorites } = props;
   const dispatch = useDispatch();
@@ -25,14 +25,14 @@ const Favorites = (props) => {
   } 
 
   return (
-    <div >
-      <div>
-        <select onChange={handleOreder}>
+    <div>
+      <div className={style.options}>
+        <select className={style.ops} onChange={handleOreder}>
           <option value="A">Ascendente</option>
           <option value="D">Descendente</option>
         </select>
 
-        <select onChange={handleFilter}>
+        <select className={style.ops} onChange={handleFilter}>
           <option value="RESET">ALL</option>
           <option value="unknown">UNKNOWN</option>
           <option value="Genderless">GENDERLESS</option>

@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     height: 500px;
-    width: 272px;   
+    width: 272px;  
+
     margin: 0px 30px;
     margin-top: 10px;
     align-items: center;
@@ -18,12 +19,11 @@
     
     text-align: center;
     margin-top: 0px;
-    font-size: 18px;
-    font-weight:lighter;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 19px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 200px;
     height: 50px;
-    text-shadow: 5px 0px 5px  white;
+    text-shadow: 2px 2px 0px  white;
 }
 
 .link{
@@ -37,6 +37,12 @@
     height: 60px;
     color: black;
     display: inline-block;
+}
+
+.buttons{
+    display: flex;
+    width: 272px;
+    justify-content: space-between;
 }
 
 .button{
@@ -53,6 +59,15 @@
     border:none;
     transition: all 0.5s ease-in-out;
 
+}
+
+.favorite{
+    height: 30px;
+    margin-top: 60px;
+    margin-left: 10px;
+    border: none;
+    background-color: #000000;
+    font-size: 25px;
 }
 
 .button:hover {

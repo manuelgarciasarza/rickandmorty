@@ -4,3 +4,20 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.options{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.ops {
+    color: #59CE5D;
+    border-color: #59CE5D;
+    background-color: #000000;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    margin: 30px;
+}
+
+

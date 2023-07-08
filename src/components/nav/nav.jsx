@@ -1,5 +1,4 @@
 import React from "react";
-import SearchBar from "../searchbar/SearchBar";
 import style from "./nav.module.css"
 import Logo from "../../img/ricklogo.png"
 import { Link } from "react-router-dom";
@@ -11,13 +10,10 @@ export default function Nav(props){
                 <Link to="/home" className={style.links} >Home</Link>
                 <Link to="/about" className={style.links}>About</Link>
                 <Link to="/favorites" className={style.links}>Favorites</Link>
-                <button className={style.logout} onClick={props.logOut}>Log out</button>
+                <Link className={style.links} onClick={props.logOut}>Log out</Link>
             </div>
             <div className={style.contener}>
                 <img className={style.logo} src={Logo} />
-            </div>
-            <div className={style.contener}>
-                <SearchBar onSearch={props.onSearch} onRandom={props.onRandom}/>
             </div>
         </div>
     )

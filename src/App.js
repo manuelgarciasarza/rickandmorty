@@ -73,12 +73,14 @@ function App() {
 
    return (
       <div className='App'>
-         {location.pathname !== '/' && <Nav onSearch={onSearch} onRandom={onRandom} logOut={logOut} />}
+         {location.pathname !== '/' && <Nav logOut={logOut} />}
          <Routes>
             <Route path="/" element={<Form login={login} />} />
             {access && (
                <>
                   <Route path="/home" element={<Cards 
+                     onSearch={onSearch} 
+                     onRandom={onRandom}
                      characters={characters} 
                      setCharacters={setCharacters} 
                      onClose={onClose} 

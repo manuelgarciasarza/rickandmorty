@@ -33,4 +33,14 @@
 #info{
     width: 280px;
     text-align: center;
+    text-shadow: 2px 2px 0px  white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+#info h3{
+    margin-left: 70px;
+    text-align: left;
+}
+
+/*     text-shadow: 5px 0px 5px  white;
+*/
