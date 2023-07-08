@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import style from "./form.module.css"
+import Rick from "../../img/rick.png"
+import Portal from "../../img/portal.png"
 
 export default function Form(props){
     const [user, setUser] = useState({email: "", password: ""})
@@ -40,6 +42,8 @@ export default function Form(props){
 
     return (
         <div className={style.conteiner}>
+            <img  className={style.portal} src={Portal} alt="Portal" />
+            <img  className={style.rick} src={Rick} alt="Rick" />
             <form className={style.form} onSubmit={handleSubmit}>
                 <div className={style.formInfo}>
                     {errors.email ? (<span className={style.error}>{errors.email}</span>): null} 
