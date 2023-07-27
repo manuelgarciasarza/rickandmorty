@@ -3,20 +3,22 @@ import {ORDER, FILTER, ADD_FAV, REMOVE_FAV, RESET } from "./actions";
 
 const initialState = {
     myFavorites: [],
-    allCharcters: []
+    allCharacters: []
 }
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case ADD_FAV:
+/*         case ADD_FAV:
             const addPj = [...state.allCharcters, action.payload]
             return {
                 ...state,
                 myFavorites: addPj,
                 allCharcters: [...addPj]             
-            };
+            }; */
+        case ADD_FAV:
+            return { ...state, myFavorites: action.payload, allCharacters: action.payload };
             
-        case REMOVE_FAV:
+/*         case REMOVE_FAV:
             
             return {
                 ...state,
@@ -26,12 +28,14 @@ const reducer = (state = initialState, action) => {
                 allCharcters: state.allCharcters.filter(
                     character => character.id !== action.payload
                 ),
-            }
+            } */
+        case REMOVE_FAV:
+            return { ...state, myFavorites: action.payload, allCharacters: action.payload  };
             
         case FILTER:
             return{
                 ...state,
-                myFavorites: state.allCharcters.filter((pj) => pj.gender === action.payload),
+                myFavorites: state.allCharacters.filter((pj) => pj.gender === action.payload),
             } 
 
         case ORDER:
@@ -55,7 +59,7 @@ const reducer = (state = initialState, action) => {
             }
         
         case RESET:
-            return {...state, myFavorites: state.allCharcters}
+            return {...state, myFavorites: state.allCharacters}
 
         default:
             return {...state}

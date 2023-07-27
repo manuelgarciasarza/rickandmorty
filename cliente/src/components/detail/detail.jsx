@@ -8,13 +8,13 @@ export default function Detail() {
   const [character, setCharacter] = useState({});
 
   useEffect(() => {
-    axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
-      if (data.name) {
-        setCharacter(data);
+    axios(`http://localhost:3001/character/${id}`).then((response) => {
+      if (response.data.name) {
+        setCharacter(response.data);
       } else {
         window.alert('No hay personajes con ese ID');
       }
-    });
+    }).catch((err) => alert(err.response.data.error) );
     return () => setCharacter({});
   }, [id]);
 
